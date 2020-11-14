@@ -1,0 +1,129 @@
+@import "variables.less";
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    max-width: inherit;
+    padding-left: 15px;
+    padding-right: 15px;
+    top: 0;
+    z-index: 20;
+    position: fixed;
+
+    .header-left {
+      display: flex;
+      height: 28px;
+    
+      .youtube-logo {
+        height: 28px;
+        width: 28px;
+      }
+      .header-left-text {
+        font-family: @font-youtube;
+        font-size: 22px;
+        line-height: 28px;
+      }
+      
+    }
+
+
+    .header-middle{
+      .nav-menu ul{
+        display: flex;
+      }
+    
+      .nav-menu ul li{
+        padding-left: 30px;
+        padding-right: 30px;
+
+        .active{
+          color: @text-primary;
+          font-weight: 500;
+          fill: @text-primary;
+        }
+
+        &:hover a,
+        &:hover .src-img{
+          color: @text-primary;
+          fill: @text-primary;
+        }
+      }
+
+      .search-block{
+        display: flex;
+
+        .search-icon{
+          display: flex;
+          align-items: center;
+        
+          
+        }
+      }
+    }
+
+    
+    .header-right{
+      .profile-image{
+        width: 26px;
+        height: 26px;
+        border-radius: 26px;
+        background-image: url("../../assets/images/user-photo.jpg");
+        background-size: 26px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+    }
+  }  
+
+  .src-img{
+    width: 18px;
+    height: 18px;
+    fill: @text-secondary;
+    margin-right: 15px;
+ }
+
+  .header-scroll{
+    transition: all .2s linear;
+    background-color: @color-main;
+    border-bottom: 0.5px solid lighten(@color-main, 20%);
+  }
+
+  .hid-late{
+    display: none;
+  }
+
+ 
+  @media (max-width: 1200px){
+    .hdn{
+      display: none;
+    }
+  }
+  @media(max-width: 900px){
+    .hid-late{
+      display: block;
+    }
+    .fade-away{
+      display: none;
+    }
+    li{
+      padding-left: 20px!important;
+      padding-right: 20px!important;
+    }
+    .src-img{
+      margin-right: 0;
+    }
+  }
+  @media(max-width: 600px){
+    .header-left-text {
+      display: none;
+    }
+    li{
+      padding-left: 15px!important;
+      padding-right: 15px!important;
+    }
+  }
+  

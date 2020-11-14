@@ -1,0 +1,335 @@
+@import "../../part-styles/variables.less";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: @font-content;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: @text-primary;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: @text-secondary;
+    font-size: 20px;
+}
+.container {
+    width: 100%;
+    height: inherit;
+    background-color: #000;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    max-width: 1500px;
+    margin: auto;
+}
+@import "../../part-styles/header.less";
+
+main {
+    position: relative;
+    padding-top: 85px;
+    padding-bottom: 25px;
+    height: 100%;
+    z-index: 1;
+}
+section {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 70px;
+    margin-bottom: 75px;
+}
+
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    &-block{
+        display: flex;
+        align-items: center;
+        width: 32.5%;
+        height: 60px;
+        border-radius: 2px;
+        background-color: #252525;
+        &:hover{
+            cursor: pointer;
+            transition: .2s linear;
+            background-color: #1b1b1b;
+        }
+        .top-sctn-img{
+            width: 18px;
+            height: 18px;
+            margin-left: 25px;
+            margin-right: 15px;
+            svg{
+                width: 18px;
+                height: 18px;
+                fill: @text-secondary;
+            }
+        }
+        .top-sctn-text{
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+}
+
+.new-albums, .new-music-videos, .moods-and-genres{
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 75px;
+}
+.moods-and-genres{
+    height: 350px;
+    .carousel{
+        height: auto;
+    }
+}
+.section-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.carousel {
+    margin: auto;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    .flickity-button:disabled{
+        opacity: 0;
+    }
+    .flickity-prev-next-button.previous,
+    .flickity-prev-next-button.next {
+        width: 35px;
+        height: 35px;
+        .flickity-button-icon {
+            fill: @color-main;
+        }
+    }
+    .carousel-cell {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 175px;
+        height: 260px;
+        margin-right: 20px;
+        &.video-slide {
+            width: 320px;
+            height: 260px;
+            .video-image {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: space-between;
+                width: 320px;
+                height: 180px;
+                padding: 15px;
+                background-position: center;
+                background-repeat: no-repeat;
+                &:hover,
+                &:hover .video-play-image{
+                    filter: brightness(0.8);
+                    visibility: visible;
+                }
+            }
+            .video-options-block {
+                top: 15px;
+                .video-options-image {
+                    fill: #fff;
+                    width: 18px;
+                    height: 18px;
+                    visibility: visible;
+                }
+            }
+            .video-play-block {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-self: center;
+                width: 48px;
+                height: 48px;
+                .video-play-image {
+                    fill: #fff;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+            .empty-block {
+                width: 24px;
+                height: 24px;
+                visibility: hidden;
+            }
+        }
+        &.moods-genres{
+            width: 180px;
+            margin-right: 22px;
+            justify-content: space-between;
+            .moods-genres-block{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 19%;
+                background-color: #252525;
+                border-radius: 5px;
+                font-size: 15px;
+                &:hover{
+                    cursor: pointer;
+                    transition: .2s linear;
+                    background-color: #1b1b1b;
+                }
+                .block-color{
+                    width: 4%;
+                    height: 98.5%;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    background-color: red;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .slide-image {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 175px;
+        height: 175px;
+        padding: 15px;
+        background-position: center;
+        background-repeat: no-repeat;
+        &:hover {
+            transition: .1s linear;
+            cursor: pointer;
+            box-shadow: 0px 70px 70px -25px @color-main inset;
+        }
+        &.square-slide {
+            border-radius: @square-block;
+            &:hover .options-block,
+            &:hover .play-block {
+                transition: all .1s linear;
+                visibility: visible;
+                cursor: pointer;
+            }
+            .options-block {
+                visibility: hidden;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+            }
+            .play-block {
+                visibility: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 40px;
+                background-color: rgba(0, 0, 0, 0.8);
+                &:hover {
+                    transform: scale(1.1);
+                    background-color: rgba(0, 0, 0, 1);
+                }
+
+            }
+            .options-image,
+            .play-image {
+                fill: #fff;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    .slide-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: 70px;
+        &.artists-text {
+            align-items: center;
+        }
+        .top-textblock {
+            font-size: 17px;
+            font-weight: 500;
+            margin-top: 5px;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+            &.vid-t:hover {
+                text-decoration: none;
+                cursor: auto;
+            }
+        }
+        .bottom-textblock {
+            color: @text-secondary;
+            font-size: 14px;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &.vid-b{
+                font-size: 12px;
+            }
+            &.vid-b:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@import "../../part-styles/explore/albums-singles.less";
+@import "../../part-styles/explore/live-videos-explore.less";
+
+.flickity-page-dots{
+    display: none;
+}
+
+@media(max-width: 900px){
+    .top-section{
+        flex-direction: column;
+        width: 100%;
+        
+        &-block{
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media(max-width: 600px){
+    section{
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+    .top-section{
+        padding-left: 20px!important;
+        padding-right: 20px!important;
+    }
+}

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="library.css">
+    <link rel="shortcut icon" href="../../assets/images/logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="../../js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <title>YouTube Music</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <header>
+                <div class="header-left">
+                    <div class="logo">
+                        <svg class="youtube-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24pt" height="24pt" viewBox="0 0 24 24" version="1.1">
+                            <g id="surface18077212"> 
+                            <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,0%,0%);fill-opacity:1;" d="M 12 20.878906 C 7.105469 20.878906 3.121094 16.894531 3.121094 12 C 3.121094 7.105469 7.105469 3.121094 12 3.121094 C 16.894531 3.121094 20.878906 7.105469 20.878906 12 C 20.878906 16.894531 16.894531 20.878906 12 20.878906 Z M 12 20.878906 "/>
+                            <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 12 17.28125 C 9.089844 17.28125 6.71875 14.910156 6.71875 12 C 6.71875 9.089844 9.089844 6.71875 12 6.71875 C 14.910156 6.71875 17.28125 9.089844 17.28125 12 C 17.28125 14.910156 14.910156 17.28125 12 17.28125 Z M 12 7.679688 C 9.617188 7.679688 7.679688 9.617188 7.679688 12 C 7.679688 14.382812 9.617188 16.320312 12 16.320312 C 14.382812 16.320312 16.320312 14.382812 16.320312 12 C 16.320312 9.617188 14.382812 7.679688 12 7.679688 Z M 12 7.679688 "/>
+                            <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 10.078125 9.601562 L 10.078125 14.398438 L 14.398438 12 Z M 10.078125 9.601562 "/>
+                            </g>
+                        </svg>
+                    </div>                        
+                    <div class="header-left-text">Music</div>
+                </div>
+                <div class="header-middle">
+                    <div class="nav-menu">
+                        <ul>
+                            <li>
+                                <a href="../../index.html">
+                                <svg class="src-img hid-late" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 306.773 306.773" style="enable-background:new 0 0 306.773 306.773;" xml:space="preserve">
+                                <g>
+                                    <path d="M302.93,149.794c5.561-6.116,5.024-15.49-1.199-20.932L164.63,8.898
+                                        c-6.223-5.442-16.2-5.328-22.292,0.257L4.771,135.258c-6.092,5.585-6.391,14.947-0.662,20.902l3.449,3.592
+                                        c5.722,5.955,14.971,6.665,20.645,1.581l10.281-9.207v134.792c0,8.27,6.701,14.965,14.965,14.965h53.624
+                                        c8.264,0,14.965-6.695,14.965-14.965v-94.3h68.398v94.3c-0.119,8.264,5.794,14.959,14.058,14.959h56.828
+                                        c8.264,0,14.965-6.695,14.965-14.965V154.024c0,0,2.84,2.488,6.343,5.567c3.497,3.073,10.842,0.609,16.403-5.513L302.93,149.794z"
+                                        />
+                                </g>
+                                </svg>
+                                </a>
+                                <a href="../../index.html" class="fade-away">Home</a></li>
+                            <li>
+                                <a href="../explore/explore.html">
+                                <svg class="src-img hid-late" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 426.667 426.667" style="enable-background:new 0 0 426.667 426.667;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M213.333,236.8c13.013,0,23.467-10.56,23.467-23.467s-10.453-23.467-23.467-23.467c-12.907,0-23.467,10.56-23.467,23.467
+                                                S200.427,236.8,213.333,236.8z"/>
+                                            <path d="M213.333,0C95.467,0,0,95.467,0,213.333c0,117.76,95.467,213.333,213.333,213.333s213.333-95.573,213.333-213.333
+                                                C426.667,95.467,331.2,0,213.333,0z M260.053,260.053l-174.72,81.28l81.28-174.72l174.72-81.28L260.053,260.053z"/>
+                                        </g>
+                                    </g>
+                                </g>
+                                </svg>
+                                </a>
+                                <a href="../explore/explore.html" class="fade-away">Explore</a></li>
+                            <li>
+                                <a href="library.html">
+                                <svg class="src-img hid-late active" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 426.667 426.667" style="enable-background:new 0 0 426.667 426.667;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M384,0H128c-23.573,0-42.667,19.093-42.667,42.667v256c0,23.573,19.093,42.667,42.667,42.667h256
+                                                c23.573,0,42.667-19.093,42.667-42.667v-256C426.667,19.093,407.573,0,384,0z M341.333,106.667h-64V224
+                                                c0,29.44-23.893,53.333-53.333,53.333S170.667,253.44,170.667,224S194.56,170.667,224,170.667c12.053,0,23.04,4.16,32,10.88V64
+                                                h85.333V106.667z"/>
+                                            <path d="M42.667,85.333H0V384c0,23.573,19.093,42.667,42.667,42.667h298.667V384H42.667V85.333z"/>
+                                        </g>
+                                    </g>
+                                </g>
+                                </svg>
+                                </a>
+                                <a href="library.html" class="fade-away active">Library</a></li>
+                            <li class="search-block">
+                                <div class="search-icon">
+                                    <svg class="src-img" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 512.005 512.005" style="enable-background:new 0 0 512.005 512.005;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M505.749,475.587l-145.6-145.6c28.203-34.837,45.184-79.104,45.184-127.317c0-111.744-90.923-202.667-202.667-202.667
+                                                S0,90.925,0,202.669s90.923,202.667,202.667,202.667c48.213,0,92.48-16.981,127.317-45.184l145.6,145.6
+                                                c4.16,4.16,9.621,6.251,15.083,6.251s10.923-2.091,15.083-6.251C514.091,497.411,514.091,483.928,505.749,475.587z
+                                                M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z"/>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                </div>
+                                <a href="#" class="hdn">Search</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="profile-image"></div>
+                </div>
+            </header>
+            <main>
+                <section class="recent-activity">
+                    <div class="section-title">
+                        Recent activity
+                        <div class="history-icon-block">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 448 448" style="enable-background:new 0 0 448 448;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <g>
+                                        <polygon points="234.667,138.667 234.667,245.333 325.973,299.52 341.333,273.6 266.667,229.333 266.667,138.667 			"/>
+                                        <path d="M255.893,32C149.76,32,64,117.973,64,224H0l83.093,83.093l1.493,3.093L170.667,224h-64
+                                            c0-82.453,66.88-149.333,149.333-149.333S405.333,141.547,405.333,224S338.453,373.333,256,373.333
+                                            c-41.28,0-78.507-16.853-105.493-43.84L120.32,359.68C154.987,394.453,202.88,416,255.893,416C362.027,416,448,330.027,448,224
+                                            S362.027,32,255.893,32z"/>
+                                    </g>
+                                </g>
+                            </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="carousel" data-flickity='{"cellAlign": "left"}'>
+                        <div class="carousel-cell">
+                            <div class="slide-image square-slide" id="xxxtentacion-album">
+                                <div class="options-block">
+                                    <svg class="options-image" id="Capa_1" enable-background="new 0 0 515.555 515.555" height="512" viewBox="0 0 515.555 515.555" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m303.347 18.875c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 212.209c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 405.541c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/></svg>
+                                </div>
+                                <div class="play-block">
+                                    <svg class="play-image" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 320.001 320.001" style="enable-background:new 0 0 320.001 320.001;" xml:space="preserve">
+                                    <path d="M295.84,146.049l-256-144c-4.96-2.784-11.008-2.72-15.904,0.128C19.008,5.057,16,10.305,16,16.001v288
+                                        c0,5.696,3.008,10.944,7.936,13.824c2.496,1.44,5.28,2.176,8.064,2.176c2.688,0,5.408-0.672,7.84-2.048l256-144
+                                        c5.024-2.848,8.16-8.16,8.16-13.952S300.864,148.897,295.84,146.049z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="slide-text playlist-text">
+                                <div class="top-textblock">17</div>
+                                <div class="bottom-textblock">🅴 Album • XXXTENTACION • 2017</div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="slide-image square-slide" id="boombox-album">
+                                <div class="options-block">
+                                    <svg class="options-image" id="Capa_1" enable-background="new 0 0 515.555 515.555" height="512" viewBox="0 0 515.555 515.555" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m303.347 18.875c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 212.209c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 405.541c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/></svg>
+                                </div>
+                                <div class="play-block">
+                                    <svg class="play-image" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 320.001 320.001" style="enable-background:new 0 0 320.001 320.001;" xml:space="preserve">
+                                    <path d="M295.84,146.049l-256-144c-4.96-2.784-11.008-2.72-15.904,0.128C19.008,5.057,16,10.305,16,16.001v288
+                                        c0,5.696,3.008,10.944,7.936,13.824c2.496,1.44,5.28,2.176,8.064,2.176c2.688,0,5.408-0.672,7.84-2.048l256-144
+                                        c5.024-2.848,8.16-8.16,8.16-13.952S300.864,148.897,295.84,146.049z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="slide-text playlist-text">
+                                <div class="top-textblock">Таємний код рубікон частина 1</div>
+                                <div class="bottom-textblock">Album • Бумбокс • 2019</div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="slide-image square-slide" id="yamakasi-album">
+                                <div class="options-block">
+                                    <svg class="options-image" id="Capa_1" enable-background="new 0 0 515.555 515.555" height="512" viewBox="0 0 515.555 515.555" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m303.347 18.875c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 212.209c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 405.541c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/></svg>
+                                </div>
+                                <div class="play-block">
+                                    <svg class="play-image" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 320.001 320.001" style="enable-background:new 0 0 320.001 320.001;" xml:space="preserve">
+                                    <path d="M295.84,146.049l-256-144c-4.96-2.784-11.008-2.72-15.904,0.128C19.008,5.057,16,10.305,16,16.001v288
+                                        c0,5.696,3.008,10.944,7.936,13.824c2.496,1.44,5.28,2.176,8.064,2.176c2.688,0,5.408-0.672,7.84-2.048l256-144
+                                        c5.024-2.848,8.16-8.16,8.16-13.952S300.864,148.897,295.84,146.049z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="slide-text playlist-text">
+                                <div class="top-textblock">YAMAKASI</div>
+                                <div class="bottom-textblock">🅴 Album • Miyagi & Andy Panda • 2020</div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="slide-image square-slide" id="divide-album">
+                                <div class="options-block">
+                                    <svg class="options-image" id="Capa_1" enable-background="new 0 0 515.555 515.555" height="512" viewBox="0 0 515.555 515.555" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m303.347 18.875c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 212.209c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 405.541c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/></svg>
+                                </div>
+                                <div class="play-block">
+                                    <svg class="play-image" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 320.001 320.001" style="enable-background:new 0 0 320.001 320.001;" xml:space="preserve">
+                                    <path d="M295.84,146.049l-256-144c-4.96-2.784-11.008-2.72-15.904,0.128C19.008,5.057,16,10.305,16,16.001v288
+                                        c0,5.696,3.008,10.944,7.936,13.824c2.496,1.44,5.28,2.176,8.064,2.176c2.688,0,5.408-0.672,7.84-2.048l256-144
+                                        c5.024-2.848,8.16-8.16,8.16-13.952S300.864,148.897,295.84,146.049z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="slide-text playlist-text">
+                                <div class="top-textblock">÷ (Deluxe)</div>
+                                <div class="bottom-textblock">Album • Ed Sheeran • 2017</div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="slide-image square-slide" id="shawnmendes-album">
+                                <div class="options-block">
+                                    <svg class="options-image" id="Capa_1" enable-background="new 0 0 515.555 515.555" height="512" viewBox="0 0 515.555 515.555" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m303.347 18.875c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 212.209c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 405.541c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/></svg>
+                                </div>
+                                <div class="play-block">
+                                    <svg class="play-image" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 320.001 320.001" style="enable-background:new 0 0 320.001 320.001;" xml:space="preserve">
+                                    <path d="M295.84,146.049l-256-144c-4.96-2.784-11.008-2.72-15.904,0.128C19.008,5.057,16,10.305,16,16.001v288
+                                        c0,5.696,3.008,10.944,7.936,13.824c2.496,1.44,5.28,2.176,8.064,2.176c2.688,0,5.408-0.672,7.84-2.048l256-144
+                                        c5.024-2.848,8.16-8.16,8.16-13.952S300.864,148.897,295.84,146.049z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="slide-text playlist-text">
+                                <div class="top-textblock">Shawn Mendes</div>
+                                <div class="bottom-textblock">Album • Shawn Mendes • 2018</div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="slide-image square-slide" id="lilpeep-single">
+                                <div class="options-block">
+                                    <svg class="options-image" id="Capa_1" enable-background="new 0 0 515.555 515.555" height="512" viewBox="0 0 515.555 515.555" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m303.347 18.875c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 212.209c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 405.541c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/></svg>
+                                </div>
+                                <div class="play-block">
+                                    <svg class="play-image" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 320.001 320.001" style="enable-background:new 0 0 320.001 320.001;" xml:space="preserve">
+                                    <path d="M295.84,146.049l-256-144c-4.96-2.784-11.008-2.72-15.904,0.128C19.008,5.057,16,10.305,16,16.001v288
+                                        c0,5.696,3.008,10.944,7.936,13.824c2.496,1.44,5.28,2.176,8.064,2.176c2.688,0,5.408-0.672,7.84-2.048l256-144
+                                        c5.024-2.848,8.16-8.16,8.16-13.952S300.864,148.897,295.84,146.049z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="slide-text playlist-text">
+                                <div class="top-textblock">Star Shopping</div>
+                                <div class="bottom-textblock">🅴 Single • Lil Peep • 2017</div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="slide-image square-slide" id="boombox-single">
+                                <div class="options-block">
+                                    <svg class="options-image" id="Capa_1" enable-background="new 0 0 515.555 515.555" height="512" viewBox="0 0 515.555 515.555" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m303.347 18.875c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 212.209c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 405.541c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/></svg>
+                                </div>
+                                <div class="play-block">
+                                    <svg class="play-image" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 320.001 320.001" style="enable-background:new 0 0 320.001 320.001;" xml:space="preserve">
+                                    <path d="M295.84,146.049l-256-144c-4.96-2.784-11.008-2.72-15.904,0.128C19.008,5.057,16,10.305,16,16.001v288
+                                        c0,5.696,3.008,10.944,7.936,13.824c2.496,1.44,5.28,2.176,8.064,2.176c2.688,0,5.408-0.672,7.84-2.048l256-144
+                                        c5.024-2.848,8.16-8.16,8.16-13.952S300.864,148.897,295.84,146.049z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="slide-text playlist-text">
+                                <div class="top-textblock">Твій на 100%</div>
+                                <div class="bottom-textblock">Single • Бумбокс • 2018</div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="slide-image square-slide" id="dojacat-single">
+                                <div class="options-block">
+                                    <svg class="options-image" id="Capa_1" enable-background="new 0 0 515.555 515.555" height="512" viewBox="0 0 515.555 515.555" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m303.347 18.875c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 212.209c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 405.541c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/></svg>
+                                </div>
+                                <div class="play-block">
+                                    <svg class="play-image" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 320.001 320.001" style="enable-background:new 0 0 320.001 320.001;" xml:space="preserve">
+                                    <path d="M295.84,146.049l-256-144c-4.96-2.784-11.008-2.72-15.904,0.128C19.008,5.057,16,10.305,16,16.001v288
+                                        c0,5.696,3.008,10.944,7.936,13.824c2.496,1.44,5.28,2.176,8.064,2.176c2.688,0,5.408-0.672,7.84-2.048l256-144
+                                        c5.024-2.848,8.16-8.16,8.16-13.952S300.864,148.897,295.84,146.049z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="slide-text playlist-text">
+                                <div class="top-textblock">Rules</div>
+                                <div class="bottom-textblock">🅴 Single • Doja Cat • 2019</div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="slide-image square-slide" id="neighborhood-album">
+                                <div class="options-block">
+                                    <svg class="options-image" id="Capa_1" enable-background="new 0 0 515.555 515.555" height="512" viewBox="0 0 515.555 515.555" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m303.347 18.875c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 212.209c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 405.541c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/></svg>
+                                </div>
+                                <div class="play-block">
+                                    <svg class="play-image" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 320.001 320.001" style="enable-background:new 0 0 320.001 320.001;" xml:space="preserve">
+                                    <path d="M295.84,146.049l-256-144c-4.96-2.784-11.008-2.72-15.904,0.128C19.008,5.057,16,10.305,16,16.001v288
+                                        c0,5.696,3.008,10.944,7.936,13.824c2.496,1.44,5.28,2.176,8.064,2.176c2.688,0,5.408-0.672,7.84-2.048l256-144
+                                        c5.024-2.848,8.16-8.16,8.16-13.952S300.864,148.897,295.84,146.049z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="slide-text playlist-text">
+                                <div class="top-textblock">I Love You</div>
+                                <div class="bottom-textblock">🅴 Album • The Neighbourhood • 2013</div>
+                            </div>
+                        </div>
+                    </div> 
+                </section>
+                <section class="bottom-block">
+                    <div class="bottom-menu">
+                        <nav>
+                            <ul>
+                                <li class="li_active">PLAYLISTS</li>
+                                <li>ALBUMS</li>
+                                <li>SONGS</li>
+                                <li>ARTISTS</li>
+                                <li>SUBSCRIPTIONS</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="playlist">
+                        <div class="playlist-block">
+                            <div class="image-block add">
+                                +
+                            </div>
+                            <div class="text-block">
+                                <div class="text-block-top">
+                                    New playlist
+                                </div>
+                                <div class="text-block-bottom empty"></div>
+                            </div>
+                        </div>
+                        <div class="playlist-block">
+                            <div class="image-block square-slide" id="liked">
+                                <div class="options-block">
+                                    <svg class="options-image" id="Capa_1" enable-background="new 0 0 515.555 515.555" height="512" viewBox="0 0 515.555 515.555" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m303.347 18.875c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 212.209c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 405.541c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/></svg>
+                                </div>
+                                <div class="play-block">
+                                    <svg class="play-image" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 320.001 320.001" style="enable-background:new 0 0 320.001 320.001;" xml:space="preserve">
+                                    <path d="M295.84,146.049l-256-144c-4.96-2.784-11.008-2.72-15.904,0.128C19.008,5.057,16,10.305,16,16.001v288
+                                        c0,5.696,3.008,10.944,7.936,13.824c2.496,1.44,5.28,2.176,8.064,2.176c2.688,0,5.408-0.672,7.84-2.048l256-144
+                                        c5.024-2.848,8.16-8.16,8.16-13.952S300.864,148.897,295.84,146.049z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="text-block">
+                                <div class="text-block-top">
+                                    Your likes
+                                </div>
+                                <div class="text-block-bottom">
+                                    Auto playlist
+                                </div>
+                            </div>
+                        </div>
+                        <div class="playlist-block">
+                            <div class="image-block square-slide" id="boombox-pl">
+                                <div class="options-block">
+                                    <svg class="options-image" id="Capa_1" enable-background="new 0 0 515.555 515.555" height="512" viewBox="0 0 515.555 515.555" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m303.347 18.875c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 212.209c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 405.541c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/></svg>
+                                </div>
+                                <div class="play-block">
+                                    <svg class="play-image" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 320.001 320.001" style="enable-background:new 0 0 320.001 320.001;" xml:space="preserve">
+                                    <path d="M295.84,146.049l-256-144c-4.96-2.784-11.008-2.72-15.904,0.128C19.008,5.057,16,10.305,16,16.001v288
+                                        c0,5.696,3.008,10.944,7.936,13.824c2.496,1.44,5.28,2.176,8.064,2.176c2.688,0,5.408-0.672,7.84-2.048l256-144
+                                        c5.024-2.848,8.16-8.16,8.16-13.952S300.864,148.897,295.84,146.049z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="text-block">
+                                <div class="text-block-top">
+                                    Presenting Boombox
+                                </div>
+                                <div class="text-block-bottom">
+                                    15 songs
+                                </div>
+                            </div>
+                        </div>
+                        <div class="playlist-block">
+                            <div class="image-block square-slide" id="chillhop-pl">
+                                <div class="options-block">
+                                    <svg class="options-image" id="Capa_1" enable-background="new 0 0 515.555 515.555" height="512" viewBox="0 0 515.555 515.555" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m303.347 18.875c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 212.209c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 405.541c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/></svg>
+                                </div>
+                                <div class="play-block">
+                                    <svg class="play-image" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 320.001 320.001" style="enable-background:new 0 0 320.001 320.001;" xml:space="preserve">
+                                    <path d="M295.84,146.049l-256-144c-4.96-2.784-11.008-2.72-15.904,0.128C19.008,5.057,16,10.305,16,16.001v288
+                                        c0,5.696,3.008,10.944,7.936,13.824c2.496,1.44,5.28,2.176,8.064,2.176c2.688,0,5.408-0.672,7.84-2.048l256-144
+                                        c5.024-2.848,8.16-8.16,8.16-13.952S300.864,148.897,295.84,146.049z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="text-block">
+                                <div class="text-block-top">
+                                    Chillhop
+                                </div>
+                                <div class="text-block-bottom">
+                                    23 songs
+                                </div>
+                            </div>
+                        </div>
+                        <div class="playlist-block">
+                            <div class="image-block square-slide" id="slowed-pl">
+                                <div class="options-block">
+                                    <svg class="options-image" id="Capa_1" enable-background="new 0 0 515.555 515.555" height="512" viewBox="0 0 515.555 515.555" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m303.347 18.875c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 212.209c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 405.541c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/></svg>
+                                </div>
+                                <div class="play-block">
+                                    <svg class="play-image" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 320.001 320.001" style="enable-background:new 0 0 320.001 320.001;" xml:space="preserve">
+                                    <path d="M295.84,146.049l-256-144c-4.96-2.784-11.008-2.72-15.904,0.128C19.008,5.057,16,10.305,16,16.001v288
+                                        c0,5.696,3.008,10.944,7.936,13.824c2.496,1.44,5.28,2.176,8.064,2.176c2.688,0,5.408-0.672,7.84-2.048l256-144
+                                        c5.024-2.848,8.16-8.16,8.16-13.952S300.864,148.897,295.84,146.049z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="text-block">
+                                <div class="text-block-top">
+                                    slowed & reverbed
+                                </div>
+                                <div class="text-block-bottom">
+                                    56 songs    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="playlist-block">
+                            <div class="image-block square-slide" id="lofi-pl">
+                                <div class="options-block">
+                                    <svg class="options-image" id="Capa_1" enable-background="new 0 0 515.555 515.555" height="512" viewBox="0 0 515.555 515.555" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m303.347 18.875c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 212.209c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/><path d="m303.347 405.541c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/></svg>
+                                </div>
+                                <div class="play-block">
+                                    <svg class="play-image" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 320.001 320.001" style="enable-background:new 0 0 320.001 320.001;" xml:space="preserve">
+                                    <path d="M295.84,146.049l-256-144c-4.96-2.784-11.008-2.72-15.904,0.128C19.008,5.057,16,10.305,16,16.001v288
+                                        c0,5.696,3.008,10.944,7.936,13.824c2.496,1.44,5.28,2.176,8.064,2.176c2.688,0,5.408-0.672,7.84-2.048l256-144
+                                        c5.024-2.848,8.16-8.16,8.16-13.952S300.864,148.897,295.84,146.049z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="text-block">
+                                <div class="text-block-top">
+                                    Lofi Hip Hop
+                                </div>
+                                <div class="text-block-bottom">
+                                    24 songs
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
